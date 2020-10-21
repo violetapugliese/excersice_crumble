@@ -1,0 +1,290 @@
+/* Esto es un comentario 
+Reglas: El conjunto
+
+Selectores: uno o más elementos
+-> selector de etiqueta ej ------"header", "article"
+-> selector descendente, elemento
+ hijo de otro elemento: ej --------"body header div ul li a"
+-> selector de clase atributo 
+de class (hacer referencia en html) 
+ej ------- <li><a class="link" href="#home"
+se hacen con "punto" ej -------- .link
+-> selector id: poner atributo de id en html
+y luego  ------  #nombre
+
+declaraciones:: todo lo que etá dentro de las llave {} compuestas por propiedades y valores
+
+propiedades:: se separan de los valores por : y de las propiedades por;
+
+valores
+
+Colors
+azul gris ##282c33;, 
+verde claro #7fa200
+verde oscuro #365a00
+whitesmoke;
+yellowgreen
+grey : #6f8b6d;
+
+*/
+
+* {
+    margin: 0;
+    margin-right: -2;
+    }
+body {
+    font-family: "Signika", sans-serif;
+    background-image: linear-gradient(to right, #365a00, #7fa200);
+    height: 100%;
+    color: whitesmoke;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Ubuntu", sans-serif;
+}
+
+.header {
+    font-family: "ubuntu", sans-serif;
+    color: white;
+    background-color: #282c33;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    display: flex;
+}
+
+/* .menu_list {
+    margin-left: 200px;
+    list-style: none;
+    display: inline-block;  
+} */
+
+.menu {
+    width: 800px; 
+    height: 100px;
+    margin: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+
+}
+
+header a {
+
+    color: whitesmoke;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+.uno  {
+    display: inline-block;
+    width: 150px;
+    height: 30px;
+    margin: 0px;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 18px;
+
+}
+
+.link {
+    margin: 0px 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+.link:hover {
+    font-size: 25px;
+    color: white;
+    
+}
+
+.logo_text {
+    text-transform: uppercase;
+    width: auto;
+    height: auto;
+    text-align: right;
+  
+
+}
+
+section {
+    padding-top: 72px;
+}
+.hero {
+    padding-top: 220px;
+    padding-left: 50px;
+    box-sizing: border-box;
+    background-image: url('../images/hero.jpg');
+    background-size: 1349px 800px;
+    background-color:  whitesmoke;
+    height: 800px;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    
+    color: whitesmoke;
+    font-size: 50px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1,5em;
+    letter-spacing: 1px;
+    text-transform: none;
+      
+}
+
+.bar_title {
+    margin: 0px 80px 0px 80px;
+    background-color: #282c33;
+    text-align: center;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+
+}
+
+.decoration_title {
+    padding-top: 40px;
+    margin: -28px 0px 50px 80px;
+    box-sizing: border-box;
+    background-color: #282c33;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-weight: lighter;
+    letter-spacing: 1.5px;
+}
+
+
+.bio_person {
+    margin: 0px 80px 90px 80px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color:  #282c33;
+    border-top-right-radius: 135px ;
+    border-bottom-right-radius: 135px;
+    width: 1189px ;
+    height: 270px;
+}
+
+
+.bio_title {
+    margin: 10px;
+    text-align: leftt;
+}
+
+.bio_containerEquipo {
+
+    width: 750px;
+    margin: 10px 20px;
+    text-align: justify;
+}
+
+.bio_container {
+    width: 500px;
+    margin: 10px 20px;
+    text-align: justify;
+}
+
+.bio_text {
+    margin: 30px 10px;
+}
+
+.avatarEquipo {
+    margin: -280px 830px 30px;
+    width: 330px;
+    height: 330px;
+    background-image: url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 800px;
+    background-position-y: -55px;
+    border-color: #7fa200 ;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 50%;   
+}
+
+.avatar {
+    margin: -260px 830px 30px;
+    width: 330px;
+    height: 330px;
+    background-image: url(../images/WhatsApp\ Image\ 2020-03-11\ at\ 19.07.56.jpeg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 330px;
+    background-position-y: -55px;
+    border-color: #7fa200 ;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 50%;
+
+    
+}
+
+.bar_titleService {
+    margin: 0px 80px 0px 80px;
+    background-color: #282c33;
+    text-align: center;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
+
+.decoration_titleService {
+    padding-top: 40px;
+    margin: -28px 0px 20px 80px;
+    box-sizing: border-box;
+    background-color: #282c33;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-weight: lighter;
+    letter-spacing: 1.5px;
+
+}
+
+.service_container {
+    border: 2px;
+    border-style: solid;
+    border-color: #365a00;
+    margin: 0px 80px 80px;
+    border-radius: 20px;
+    background-image: url(../images/logo-vertical.png);
+    background-repeat: no-repeat;
+    background-size: 7%;
+    background-position: 40px 25px;
+    padding: 15px 150px;
+}
+
+.service_list {
+    list-style: none;
+    font-size: 40px;
+    line-height: 55px;
+    
+}
+
+.list:hover {
+    font-size: 50px ;
+    color: whitesmoke;
+}
+
+.contact {
+    margin-bottom: 20px;
+    height: 500px;
+    background-image: url(../images/logo-black.png);
+    background-size: 70px 70px;
+    background-repeat: space;
+}
+
+
+.footer {
+    background-color: #282c33;
+    height: 100px;
+}
