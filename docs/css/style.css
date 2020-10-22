@@ -112,7 +112,7 @@ header a {
 }
 
 section {
-    padding-top: 32px;
+    padding-top: 60px;
 }
 .hero {
     padding-top: 220px;
@@ -137,24 +137,24 @@ h1 {
       
 }
 
-.bar_title {
+/* .bar_title {
     margin: 0px 80px 0px 80px;
     background-color: #282c33;
     text-align: center;
     border-top-right-radius: 14px;
     border-bottom-right-radius: 14px;
 
-}
+} */
 
 .decoration_title {
-    padding-top: 40px;
-    margin: -28px 0px 50px 80px;
+    padding-top: 8px;
+    margin: 0px 0px 30px 710px;
     box-sizing: border-box;
     background-color: #282c33;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
     width: 100px;
-    height: 100px;
+    height: 60px;
     text-align: center;
     font-weight: lighter;
     letter-spacing: 1.5px;
@@ -236,18 +236,17 @@ h1 {
 }
 
 .decoration_titleService {
-    padding-top: 40px;
-    margin: -28px 0px 20px 80px;
+    padding-top: 0px;
+    margin: 0px 0px 30px 823px;
     box-sizing: border-box;
     background-color: #282c33;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
     width: 100px;
-    height: 100px;
+    height: 60px;
     text-align: center;
     font-weight: lighter;
     letter-spacing: 1.5px;
-
 }
 
 .service_container {
