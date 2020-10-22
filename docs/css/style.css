@@ -55,19 +55,16 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
 }
 
-/* .menu_list {
-    margin-left: 200px;
-    list-style: none;
-    display: inline-block;  
-} */
 
 .menu {
     width: 1000px; 
     height: 60px;
     margin: 0px 10px;
-    padding: 10px 20px 5px 400px;
+    padding: 10px 10px 5px ;
     box-sizing: border-box;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 
 }
 
@@ -82,11 +79,8 @@ header a {
 .link {
     width: 120px;
     height: 100px;
-    /* padding: 10px; */
-    box-sizing: border-box;
-    /* margin: 0px 20px; */
-    display: inline;
     text-align: center;
+    flex-shrink: 0;
 }
 
 .link:hover {
@@ -137,15 +131,6 @@ h1 {
       
 }
 
-/* .bar_title {
-    margin: 0px 80px 0px 80px;
-    background-color: #282c33;
-    text-align: center;
-    border-top-right-radius: 14px;
-    border-bottom-right-radius: 14px;
-
-} */
-
 .decoration_title {
     padding-top: 8px;
     margin: 0px 0px 30px 710px;
@@ -163,13 +148,16 @@ h1 {
 
 .bio_person {
     margin: 0px 80px 90px 80px;
-    padding: 20px;
+    padding-left: 20px;
     box-sizing: border-box;
     background-color:  #282c33;
     border-top-right-radius: 135px ;
     border-bottom-right-radius: 135px;
     width: 1189px ;
     height: 270px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -179,16 +167,18 @@ h1 {
 }
 
 .bio_containerEquipo {
-
     width: 750px;
     margin: 10px 20px;
     text-align: justify;
+    flex-shrink: 0;
 }
 
 .bio_container {
     width: 500px;
     margin: 10px 20px;
+    padding-right: 250px;
     text-align: justify;
+    flex-shrink: 0;
 }
 
 .bio_text {
@@ -196,7 +186,7 @@ h1 {
 }
 
 .avatarEquipo {
-    margin: -280px 830px 30px;
+    /* margin: -280px 830px 30px; */
     width: 330px;
     height: 330px;
     background-image: url(../images/hero.jpg);
@@ -207,11 +197,12 @@ h1 {
     border-color: #7fa200 ;
     border-width: 5px;
     border-style: solid;
-    border-radius: 50%;   
+    border-radius: 50%; 
+    flex-shrink: 0;  
 }
 
 .avatar {
-    margin: -260px 830px 30px;
+    /* margin: -260px 830px 30px; */
     width: 330px;
     height: 330px;
     background-image: url(../images/WhatsApp\ Image\ 2020-03-11\ at\ 19.07.56.jpeg);
