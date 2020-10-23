@@ -474,6 +474,11 @@ label {
   
 }
 
+.bottom:hover {
+    background-color: #365a00;
+    color: white;
+}
+
 .footer {
     background-color: #282c33;
     padding: 10px;
