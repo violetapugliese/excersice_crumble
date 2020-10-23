@@ -169,7 +169,7 @@ h1 {
 .bio_containerEquipo {
     width: 750px;
     margin: 10px 20px;
-    text-align: justify;
+    text-align: left;
     flex-shrink: 0;
 }
 
@@ -177,7 +177,7 @@ h1 {
     width: 500px;
     margin: 10px 20px;
     padding-right: 250px;
-    text-align: justify;
+    text-align: left;
     flex-shrink: 0;
 }
 
@@ -265,8 +265,115 @@ h1 {
     color: whitesmoke;
 }
 
-.contact {
+.productions {
+padding-left: 60px;
+padding-bottom: 200px;
+}
+
+.decoration_titleProductions {
+    padding-top: 0px;
+    margin-left: 880px;
+    box-sizing: border-box;
+    background-color: #282c33;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    width: 100px;
+    height: 60px;
+    text-align: center;
+    font-weight: lighter;
+    letter-spacing: 1.5px;
+}
+
+.productions_articles {
+    margin: 10px;
+    display: flex;
+    align-items: flex-end;
+}
+
+
+h3 {
     margin-bottom: 20px;
+}
+
+.productions_referenceOne {
+/* background-color: #7fa200; */
+    width: 300px;
+    height: 300px;
+    color: whitesmoke;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50% ;
+    margin: -150px 90px;
+    padding: 20px;
+    text-align: center; 
+    flex-shrink: 0;  
+    border: 2px solid #282c33;
+   
+
+}
+
+
+
+.productions_referenceTwo {
+    /* background-color: #282c33; */
+    width: 250px;
+    height: 250px;
+    color: whitesmoke;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50% ;
+    margin: 0px 20px;
+    padding: 20px;
+    text-align: center; 
+    flex-shrink: 0;  
+    border: 2px solid #282c33;
+}
+
+.productions_referenceOne:hover {
+    background-color: #282c33;
+}
+.productions_referenceThree:hover {
+    background-color: #282c33;
+}
+.productions_referenceTwo:hover {
+    background-color: #282c33;
+}
+
+.mira:hover {
+    background-color: #7fa200;
+}
+
+.productions_referenceThree {
+/* background-color: #365a00 ; */
+    width: 200px;
+    height: 200px;
+    color: whitesmoke;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50% ;
+    margin: -160px 60px;
+    padding: 20px;
+    text-align: center; 
+    flex-shrink: 0;  
+    border: 2px solid #282c33;
+    box-sizing: border-box;
+
+}
+
+.productions_description {
+    margin: 0px 10px 30px;
+}
+
+.productions a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid whitesmoke;
+    margin-top: 20px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    
+}
+
+.contact {
+    margin: 20px 0px 20px;
     height: 500px;
     background-image: url(../images/logo-black.png);
     background-size: 70px 70px;
@@ -276,5 +383,6 @@ h1 {
 
 .footer {
     background-color: #282c33;
-    height: 100px;
+    padding: 20px;
+    text-align: right;
 }
