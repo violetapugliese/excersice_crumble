@@ -7,7 +7,8 @@
         <link rel="icon" type="image/png" href="images/logo-black.png">
         <link rel="stylesheet" href="css/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
-</head>
+
+    </head>
 <body>
 <header class="header">
     <figure class="logo">
@@ -16,14 +17,18 @@
     <p class="logo_text">Crumble <br> Producciones</p>
                 <!-- <div class="menu_barnav"> -->
                 <nav class="menu">
-                    
                     <a class="link" href="#home">Home</a> 
                     <a class="link" href="#quienessomos">About Us</a>
                     <a class="link" href="#servicios">Servicios</a>
                     <a class="link" href="#producciones">Videos</a>
                     <a class="link" href="#contacto">Contacto</a>
-                
-            </nav>
+                </nav>
+                <div class="social_iconContainer">
+                    <a href="" class="social_icon"><img src="./images/logo-facebook-white.png" alt=""></a>
+                    <a href="" class="social_icon"><img src="./images/logo-instagram-white.png" alt=""></a>
+                    <a href="" class="social_icon"><img src="./images/logo-twitter-white.png" alt=""></a>
+                    <a href="" class="social_icon"><img src="./images/logo-github-white.png" alt=""></a>
+                </div>
     </header>
 <section class="hero" id="home">
         <h1>Lo soñamos <br/> Lo proyectamos <br/> Lo hacemos <br> Lo comemos </h1> 
@@ -111,18 +116,39 @@
 </div>
 </section>
 <section class="contact" id="contacto">
-        <h3 class="contact_title">Conactanos! </h3>
+    <div class="decoration_titleContact"> 
+        <img src="./images/logo-mail-white.png" alt="mail" width="40" height="40">    
+    </div>
         <form class="contact_form" action="/suscripcion/">
-            <input type="text" placeholder="Email">
-            <textarea name="Consulta" id="Consulta" placeholder="Consulta" cols="30" rows="10"></textarea>
-            <label for="">Acepto</label> 
-            <input type="checkbox" name="Acepto" id="Acepto">
-            <input type="submit" value="Enviar">
+            <h3>¡Escribinos!</h3>
+            <input class="email" type="text" placeholder="Email">
+            <textarea class="textarea" name="Consulta" id="Consulta" placeholder="Consulta" cols="200" rows="200"></textarea>
+            <br>
+            <div class="checkbox_container">
+                <input class="checkbox" type="checkbox" name="Acepto" id="Acepto">
+                <label class="checkbox_tex" for="">Quiero recibir el newsletter mensual</label> 
+            </div>
+            <div class="bottom_container">
+                <input class="bottom" type="submit" value="Enviar">
+            </div>
         </form>
     </section>
 <footer class="footer">
-        <h5>Violeta Pugliese 2020</h5>
-    </footer class="footer">
+    <div class="footer_menu">
+        <a class="link_footer" href="#home">Home</a> 
+        <a class="link_footer" href="#quienessomos">About Us</a>
+        <a class="link_footer" href="#servicios">Servicios</a>
+        <a class="link_footer" href="#producciones">Videos</a>
+        <a class="link_footer" href="#contacto">Contacto</a>
+    </div>
+  <div class="social_iconContainer">
+      <a href="" class="social_icon"><img src="./images/logo-facebook-white.png" alt=""></a>
+      <a href="" class="social_icon"><img src="./images/logo-instagram-white.png" alt=""></a>
+      <a href="" class="social_icon"><img src="./images/logo-twitter-white.png" alt=""></a>
+      <a href="" class="social_icon"><img src="./images/logo-github-white.png" alt=""></a>
+  </div>
+  <!-- <h5>Violeta Pugliese 2020</h5> -->
+</footer class="footer">
 
 </body>
 </html>
