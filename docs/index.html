@@ -7,35 +7,42 @@
         <link rel="icon" type="image/png" href="images/logo-black.png">
         <link rel="stylesheet" href="css/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
-
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
     </head>
 <body>
 <header class="header">
-    <figure class="logo">
-        <img  src="images/logo.png" alt="logo tenedor" width="40" height="40">
-    </figure>
-    <p class="logo_text">Crumble <br> Producciones</p>
-                <!-- <div class="menu_barnav"> -->
-                <nav class="menu">
-                    <a class="link" href="#home">Home</a> 
-                    <a class="link" href="#quienessomos">About Us</a>
-                    <a class="link" href="#servicios">Servicios</a>
-                    <a class="link" href="#producciones">Videos</a>
-                    <a class="link" href="#contacto">Contacto</a>
+   <div class="container_header">
+       <figure class="logo">
+           <img  src="images/logo.png" alt="logo tenedor" width="40" height="40">
+       </figure>
+       <p class="logo_text">Crumble <br> Producciones</p>
+                   <!-- <div class="menu_barnav"> -->
+                   <nav class="menu">
+                    <ul>
+                            <a class="link" href="#home">Home</a> 
+                           <a class="link" href="#quienessomos">About Us</a>
+                           <a class="link" href="#servicios">Servicios</a>
+                           <a class="link" href="#producciones">Videos</a>
+                           <a class="link" href="#contacto">Contacto</a>
+                    </ul>  
+                   <div class="social_iconContainer">
+                       <a href="" class="social_icon"><img src="./images/logo-facebook-white.png" alt=""></a>
+                       <a href="" class="social_icon"><img src="./images/logo-instagram-white.png" alt=""></a>
+                       <a href="" class="social_icon"><img src="./images/logo-twitter-white.png" alt=""></a>
+                       <a href="" class="social_icon"><img src="./images/logo-github-white.png" alt=""></a>
+                   </div>
                 </nav>
-                <div class="social_iconContainer">
-                    <a href="" class="social_icon"><img src="./images/logo-facebook-white.png" alt=""></a>
-                    <a href="" class="social_icon"><img src="./images/logo-instagram-white.png" alt=""></a>
-                    <a href="" class="social_icon"><img src="./images/logo-twitter-white.png" alt=""></a>
-                    <a href="" class="social_icon"><img src="./images/logo-github-white.png" alt=""></a>
-                </div>
-    </header>
+   </div>
+    
+            </header>
 <section class="hero" id="home">
+    <img src="../docs/images/hero.jpg" alt="manzana jugosa verdesss">
         <h1>Lo soñamos <br/> Lo proyectamos <br/> Lo hacemos <br> Lo comemos </h1> 
     </section>    
 <section class="bio" id="quienessomos"> 
         <div class="decoration_title"> <h4>Quiénes<br>somos</h4></div>
-
+<div class="bio_bigcontainer">
     <article class="bio_person">
         <div class="bio_containerEquipo">
                <h3 class="bio_title">Equipo</h3>
@@ -73,29 +80,29 @@
         </figure>
             </article>
         
+</div>
     </section>
 <section class="service" id="servicios">
-    <!-- <div class="bar_titleService">
-        <h2><br></h2>
-    </div> -->
-        <div class="decoration_titleService"> 
+        <div class="decoration_title"> 
             <h4>Qué <br>hacemos </h4>
         </div>
-    <article class="service_container">
+    <div class="service_bigcontainer">
+        <article class="service_container">
         <ul class="service_list">
             <li class="list">Diseño de imagen</li>
-            <li class="list">Social media</li>
-            <li class="list">Producción</li>
-            <li class="list">Eventos</li>
-            <li class="list">Programación de viajes</li>
-            <li class="list">Gira nacional</li>
-            <li class="list">Gira internacional</li>
-        </ul>
-    </article>
+                <li class="list">Social media</li>
+                <li class="list">Producción</li>
+                <li class="list">Eventos</li>
+                <li class="list">Programación de viajes</li>
+                <li class="list">Gira nacional</li>
+                <li class="list">Gira internacional</li>
+            </ul>
+        </article>
+    </div>
     </section>
 <section class="productions" id="producciones"> 
-    <div class="decoration_titleProductions"> 
-        <h4>¡Mirá!</h4>
+    <div class="decoration_title"> 
+        <h4> <br> ¡Mirá!</h4>
     </div>
    <div class="productions_articles">
     <article class="productions_referenceOne">
@@ -116,7 +123,7 @@
 </div>
 </section>
 <section class="contact" id="contacto">
-    <div class="decoration_titleContact"> 
+    <div class="decoration_title"> 
         <img src="./images/logo-mail-white.png" alt="mail" width="40" height="40">    
     </div>
         <form class="contact_form" action="/suscripcion/">
