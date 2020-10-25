@@ -1,12 +1,12 @@
-/* Esto es un comentario 
+/* Esto es un comentario
 Reglas: El conjunto
 
 Selectores: uno o más elementos
 -> selector de etiqueta ej ------"header", "article"
 -> selector descendente, elemento
  hijo de otro elemento: ej --------"body header div ul li a"
--> selector de clase atributo 
-de class (hacer referencia en html) 
+-> selector de clase atributo
+de class (hacer referencia en html)
 ej ------- <li><a class="link" href="#home"
 se hacen con "punto" ej -------- .link
 -> selector id: poner atributo de id en html
@@ -19,7 +19,7 @@ propiedades:: se separan de los valores por : y de las propiedades por;
 valores
 
 Colors
-azul gris ##282c33;, 
+azul gris ##282c33;,
 verde claro #7fa200
 verde oscuro #365a00
 whitesmoke;
@@ -51,13 +51,13 @@ h1, h2, h3, h4, h5, h6 {
     box-sizing: border-box;
     width: 100%;
     height: 60px;
-    position: fixed;
+    /* position: fixed; */
     display: flex;
 }
 
 
 .menu {
-    width: 80%; 
+    width: 100%;
     height: 60px;
     padding: 10px 10px 5px ;
     box-sizing: border-box;
@@ -86,14 +86,14 @@ header a {
 .link:hover {
     font-size: 25px;
     color: white;
-    
+
 }
 
 .logo {
     margin: 10px 10px;
     width: 40px;
     height: 40px;
-    
+
 }
 
 .logo_text {
@@ -102,7 +102,7 @@ header a {
     width: auto;
     height: auto;
     text-align: right;
-  
+
 }
 
 section {
@@ -111,36 +111,33 @@ section {
 .hero {
     width: 100%;
     padding-top: 0px;
-    height: 700px;
-    /* padding-left: 50px; */
-    /* box-sizing: border-box; */
-    /* display: flex;
-    flex-wrap: wrap; */
-    /* background-image: url('../images/hero.jpg');
-    background-size: 1349px 800px;
-    background-color:  whitesmoke;
-    background-repeat: no-repeat; */
- 
+    height: auto;
+    background-image: url(../images/hero.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
+
 
 
 .hero img {
+    /* position: absolute; */
     flex-shrink: 0;
     width: 100%;
-    border: 2px solid #365a00;
+    border-right: 2px solid #365a00;
+    z-index: 1;
+    ;
 }
 
  h1 {
-    margin-top: -600px;
-    margin-left: 50px;
-    color: whitesmoke;
+    z-index: 2;
+    margin: 15% 8%;
+    color:whitesmoke;
     font-size: 40px;
     line-height: 1,5em;
     letter-spacing: 1px;
-    /* font-weight: normal;
-    font-style: normal;
-      text-transform: none;  */
-} 
+  
+}
 
 
 .decoration_title {
@@ -158,73 +155,39 @@ section {
     letter-spacing: 1.5px;
 }
 
-.bio_bigcontainer {
-    /* max-width:1050px; */
-    margin: 0 auto;
+.bio_border {
+    width: 80% ;
     display: flex;
-    flex-wrap: wrap;
-    margin-top: 20px;
+    margin: 0 auto;
+     
 }
 
 .bio_person {
-    margin-bottom: 90px;
-    padding-left: 20px;
-    box-sizing: border-box;
+    margin: 20px auto;
+    padding: 20px;
     background-color:  #282c33;
-    border-top-right-radius: 135px ;
-    border-bottom-right-radius: 135px;
-    width: 1050px ;
-    height: 270px;
+    border-top-right-radius: 170px;
+    border-bottom-right-radius: 170px;
+    width: 80% ;
+    height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 
-.bio_title {
-    margin: 10px;
-    text-align: leftt;
-}
 
-.bio_containerEquipo {
-    width: auto;
-    margin: 10px 20px;
+.bio_description {
+    width: 40%;
     text-align: left;
-    /* flex-shrink: 0; */
-}
-
-.bio_container {
-    width: auto;
-    margin: 10px 20px;
-    padding-right: 250px;
-    text-align: left;
-    /* flex-shrink: 0; */
-}
-
-.bio_text {
-    margin: 30px 10px;
-}
-
-.avatarEquipo {
-    /* margin: -280px 830px 30px; */
-    width: 330px;
-    height: 330px;
-    background-image: url(../images/hero.jpg);
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: 800px;
-    background-position-y: -55px;
-    border-color: #7fa200 ;
-    border-width: 5px;
-    border-style: solid;
-    border-radius: 50%; 
-    flex-shrink: 0;  
+    flex-shrink: 0;
 }
 
 .avatar {
     /* margin: -260px 830px 30px; */
-    width: 330px;
-    height: 330px;
+    width: 300px;
+    height: 300px;
     background-image: url(../images/WhatsApp\ Image\ 2020-03-11\ at\ 19.07.56.jpeg);
     background-repeat: no-repeat;
     background-position: 50%;
@@ -235,33 +198,8 @@ section {
     border-style: solid;
     border-radius: 50%;
     flex-shrink: 0;
-  
+
 }
-
-/* .bar_titleService {
-    margin: 0px 80px 0px 80px;
-    background-color: #282c33;
-    text-align: center;
-    border-top-right-radius: 14px;
-    border-bottom-right-radius: 14px;
-} */
-
-
-
-/* .decoration_titleService {
-    padding-top: 0px;
-    margin: 0px 80px;
-    box-sizing: border-box;
-    background-color: #282c33;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    width: 100px;
-    height: 60px;
-    font-size: 14px;
-    text-align: center;
-    font-weight: lighter;
-    letter-spacing: 1.5px;
-} */
 
 .service_bigcontainer {
     max-width: 1050px ;
@@ -289,7 +227,7 @@ section {
     list-style: none;
     font-size: 40px;
     line-height: 55px;
-    
+
 }
 
 .list:hover {
@@ -298,21 +236,6 @@ section {
 }
 
 
-/* 
-.decoration_titleProductions {
-    padding-top: 10px;
-    margin-left: 80px;
-    box-sizing: border-box;
-    background-color: #282c33;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    width: 100px;
-    height: 60px;
-    text-align: center;
-    font-size: 14px;
-    font-weight: lighter;
-    letter-spacing: 1.5px;
-} */
 
 .productions_articles {
     /* max-width: 1050px; */
@@ -336,10 +259,10 @@ h3 {
     border-bottom-right-radius: 50% ;
     margin: 130px 90px 0px 0px;
     padding: 20px;
-    text-align: center; 
-    flex-shrink: 0;  
+    text-align: center;
+    flex-shrink: 0;
     border: 2px solid #282c33;
-   
+
 
 }
 
@@ -352,8 +275,8 @@ h3 {
     border-bottom-right-radius: 50% ;
     margin: 0px 20px;
     padding: 20px;
-    text-align: center; 
-    flex-shrink: 0;  
+    text-align: center;
+    flex-shrink: 0;
     border: 2px solid #282c33;
 }
 
@@ -380,8 +303,8 @@ h3 {
     border-bottom-right-radius: 50% ;
     margin: 200px 0px 0px 60px;
     padding: 20px;
-    text-align: center; 
-    flex-shrink: 0;  
+    text-align: center;
+    flex-shrink: 0;
     border: 2px solid #282c33;
     box-sizing: border-box;
 
@@ -399,7 +322,7 @@ h3 {
     margin-top: 20px;
     padding: 5px 20px;
     border-radius: 5px;
-    
+
 }
 
 .contact {
@@ -409,29 +332,13 @@ h3 {
     background-size: 70px 70px;
     background-repeat: space;
 }
-/* 
-.decoration_titleContact {
-    padding-top: 0px;
-    margin-left: 80px;
-    box-sizing: border-box;
-    background-color: #282c33;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    width: 100px;
-    height: 60px;
-    font-size: 14px;
-    text-align: center;
-    font-weight: lighter;
-    letter-spacing: 1.5px;
-} */
-
 
 .contact_form {
     /* display: flex; */
     width: 450px;
     margin: 0 auto;
     align-items: center;
-  
+
 }
 
 
@@ -446,7 +353,7 @@ h3 {
     background-repeat: no-repeat;
     background-position-x: 5px;
     background-position-y: 3px;
-    padding: 5px 0px 5px 28px; 
+    padding: 5px 0px 5px 28px;
 }
 
 .textarea {
@@ -467,7 +374,7 @@ h3 {
     justify-content: left;
     align-items: center;
     margin-bottom: 20px;
-   
+
 }
 
 .checkbox {
@@ -502,7 +409,7 @@ label {
     border-radius: 5px;
     color: #365a00;
     object-position: right;
-  
+
 }
 
 .bottom:hover {
@@ -528,7 +435,7 @@ label {
     flex-shrink: 0;
     display: flex;
     justify-content: space-between;
-   flex-wrap: wrap; 
+   flex-wrap: wrap;
 }
 
 .footer_menu a {
@@ -561,7 +468,7 @@ label {
     margin: 0px 5px;
     height: 30px;
     width: 30px;
-  
+
 }
 h5 {
     display: block;
@@ -579,18 +486,17 @@ h5 {
 
 .container {
     border: 2px solid red;
-    width: 80%;
-    margin: 0 auto; 
+    max-width: 80%;
+    margin: 0 auto;
     display: inherit;
     justify-content: inherit;
     align-items: inherit;
     height: inherit;
-    
+
 }
 
 @media screen and (max-width: 1024px) {}
-@media screen and (max-width: 768px) { 
-    }
-}
+@media screen and (max-width: 768px) {}
+
 @media screen and (max-width: 480px) {}
 @media screen and (max-width: 320px) {}
