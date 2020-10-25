@@ -251,10 +251,10 @@ section {
 }
 
 .service_imgTwo {
-    display: none;
+    display: flex;
     visibility: hidden;
-    width: auto;
-    height: 10%;
+    width: 1%;
+    height: auto;
 }
 
 .service_imgOne {
