@@ -81,10 +81,6 @@ ul  {
 }
 
 
-.link {
-
-}
-
 .link:hover {
     /* font-size: 25px; */
     color: #7fa200;
@@ -251,6 +247,7 @@ section {
 }
 
 .service_imgOne {
+    display: block;
     visibility: visible;
     width: 87px;
     height: auto;
