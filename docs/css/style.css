@@ -47,9 +47,11 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "ubuntu", sans-serif;
     color: white;
     background-color: #282c33;
-    width: auto;
+    width: 100%;
     height: auto;
     display: flex;
+    position: fixed;
+    z-index: 1;
 }
 
 
@@ -105,35 +107,34 @@ ul  {
 
 section {
     padding-top: 60px;
+    position: relative;
 }
 .hero {
     width: 100%;
-    padding-top: 0px;
     height: auto;
-    background-image: url(../images/hero.jpg);
+    /* background-image: url(../images/hero.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: bottom; */
 }
 
 
 
 .hero img {
-    /* position: absolute; */
     flex-shrink: 0;
     width: 100%;
+    margin: auto;
     border-right: 2px solid #365a00;
-    z-index: 1;
-    ;
 }
 
  h1 {
-    z-index: 2;
-    margin: 15% 8%;
     color:whitesmoke;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 1,5em;
     letter-spacing: 1px;
+    position: absolute;
+    top: 60px;
+    left: 40px;
 
 }
 
@@ -344,6 +345,8 @@ h3 {
      background-image: url(../images/logo-black.png);
     background-size: 70px 70px;
     background-repeat: space;
+    padding-bottom: 60px;
+
 }
 
 
@@ -542,6 +545,7 @@ h5 {
     justify-content: inherit;
     align-items: inherit;
     height: inherit;
+    position: relative;
 
 }
 
@@ -550,7 +554,9 @@ h5 {
     .header {
         display: block;
         height: auto;
-        ;
+        position: initial;
+        width: auto;
+        
     }
     .menu {
         display: flex;
