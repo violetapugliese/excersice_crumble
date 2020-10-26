@@ -609,7 +609,7 @@ h5 {
     .service_list {
         font-size: 20px;
     }
-
+/* 
     .service_imgTwo {
         display: flex;
         visibility: visible;
@@ -618,11 +618,10 @@ h5 {
     }
     
     .service_imgOne {
-        /* display: none; */
         visibility: hidden;
        width: 1%;
     }
-    
+     */
 }
 
 @media screen and (max-width: 480px) {}
