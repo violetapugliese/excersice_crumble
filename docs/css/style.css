@@ -248,13 +248,14 @@ section {
 
 .service_imgOne {
     
-    width: 100%;
+    width: 10%;
     height: auto;
 }
 
 
 .service_imgTwo{
-    width: 100%;
+    visibility: hidden;
+    width: 1%;
     height: auto;
 }
 
@@ -604,6 +605,20 @@ h5 {
     .service_list {
         font-size: 20px;
     }
+
+    .service_imgOne {
+        visibility: hadden;    
+        width: 1%;
+        height: auto;
+    }
+    
+    
+    .service_imgTwo{
+        visibility: visible;
+        width: 100%;
+        height: auto;
+    }
+    
 
 }
 
