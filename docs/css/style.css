@@ -246,6 +246,16 @@ section {
 
 }
 
+.service_imgOne {
+    width: 100%;
+    height: auto;
+}
+
+
+.service_imgTwo{
+    width: 100%;
+    height: auto;
+}
 
 
 .service_list {
