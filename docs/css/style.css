@@ -246,22 +246,6 @@ section {
 
 }
 
-.service_imgOne {
-    display: block;
-    visibility: visible;
-    width: 87px;
-    height: auto;
-    flex-shrink: 0;
-}
-
-
-
-.service_imgTwo {
-    display: flex;
-    visibility: visible;
-    width: 1%;
-    height: auto;
-}
 
 
 .service_list {
@@ -609,19 +593,7 @@ h5 {
     .service_list {
         font-size: 20px;
     }
-/* 
-    .service_imgTwo {
-        display: flex;
-        visibility: visible;
-        width: 80%;
-        height: auto;
-    }
-    
-    .service_imgOne {
-        visibility: hidden;
-       width: 1%;
-    }
-     */
+
 }
 
 @media screen and (max-width: 480px) {}
