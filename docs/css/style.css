@@ -250,18 +250,20 @@ section {
 
 }
 
-.service_imgTwo {
-    display: flex;
-    visibility: hidden;
-    width: 1%;
-    height: auto;
-}
-
 .service_imgOne {
     visibility: visible;
     width: 87px;
     height: auto;
     flex-shrink: 0;
+}
+
+
+
+.service_imgTwo {
+    display: flex;
+    visibility: visible;
+    width: 1%;
+    height: auto;
 }
 
 
@@ -619,9 +621,9 @@ h5 {
     }
     
     .service_imgOne {
-        display: none;
+        /* display: none; */
         visibility: hidden;
-       
+       width: 1%;
     }
     
 }
