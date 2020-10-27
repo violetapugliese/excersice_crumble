@@ -549,6 +549,28 @@ h5 {
 
 }
 
+.flexible_video {
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%;
+    background-color: #282c33;
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 5px;
+
+}
+
+.productions_video {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom:0;
+    left:0;
+    right:0;
+    position: absolute;
+
+}
+
 @media screen and (max-width: 1024px) {}
 @media screen and (max-width: 767px) {
     .header {
