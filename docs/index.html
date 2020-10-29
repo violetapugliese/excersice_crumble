@@ -12,7 +12,7 @@
         
     </head>
 <body>
-    <i class="icon-menu burger-button"></i>
+    <i class="icon-menu burger-button" id="burgerButton"></i>
     <header class="header">
    <div class="container_header">
     <figure class="logo">
@@ -197,7 +197,7 @@
             </form>
     </div>
     </section>
- <footer class="footer">
+<footer class="footer">
     <div class="footer_menu">
         <a class="link_footer" href="#home">Home</a> 
         <a class="link_footer" href="#quienessomos">About Us</a>
@@ -210,6 +210,27 @@
         <p>Violeta Pugliese </p>
     </div>
 </footer class="footer">
+
+<script>
+    console.log('Hola Mundo! es mi primer linea de JS');
+
+    const menu = document.querySelector('.menu');
+    console.log(menu);
+    const burgerButton = document.querySelector('#burgerButton');
+    console.log(burgerButton);
+    
+     burgerButton.addEventListener('click', function (){
+         menu.classList.toggle('is-active')
+     })
+    
+    // function hideShow () {
+    //     if (menu.classList.contains('is-active')) {
+    //          menu.classList.remove('is-active');
+    //    } else {
+    //         menu.classList.add('is-active');
+    //     }
+
+</script>
 
 </body>
 </html>
