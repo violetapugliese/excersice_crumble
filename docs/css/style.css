@@ -274,13 +274,6 @@ section {
 }
 
 
-/* .service_bigcontainer {
-    max-width: 1050px ;
-    margin: 0 auto;
-    display: flex;
-    margin-top: 20px;
-} */
-
 .service_container {
     border: 2px solid #365a00;
     width: 80%;
@@ -665,7 +658,7 @@ h5 {
     }
 
     .menu.is-active {
-        left: 0px;
+        left: 0;
     }
 
     header ul {

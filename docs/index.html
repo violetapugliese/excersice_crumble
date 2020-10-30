@@ -19,8 +19,7 @@
            <img  src="images/logo.png" alt="logo tenedor" width="40" height="40">
            <p class="logo_text">Crumble <br> Producciones</p>
        </figure>
-                   <!-- <div class="menu_barnav"> -->
-                   <nav class="menu is-active">
+                   <nav class="menu">
                     <ul>
 
                         <li>
@@ -140,7 +139,6 @@
        <div class="productions_articles">
         <article class="productions_referenceOne">
             <h3>Producción uno</h3>
-            <!-- <p class="productions_description">Lorem ipsum dolor freb tun guilon gthiemltze sit amet, consectetur adipisicing elit. Sit nesciunt illo maxime fugiat perferendis </p> -->
             <div class="flexible_video">
                 <iframe class="productions_video" width="560" height="315" src="https://www.youtube.com/embed/kJq6jDvJPQE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
@@ -149,7 +147,6 @@
         </article>        
         <article class="productions_referenceTwo">
             <h3>Producción uno</h3>
-            <!-- <p class="productions_description">Lorem ipsum dolor freb tun guilon gthiemltze sit amet, consectetur adipisicing elit. Sit nesciunt illo maxime fugiat perferendis </p> -->
             <div class="flexible_video">
                 <iframe class="productions_video" width="560" height="315" src="https://www.youtube.com/embed/kJq6jDvJPQE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
@@ -158,7 +155,6 @@
         </article>
         <article class="productions_referenceThree">
             <h3>Producción uno</h3>
-            <!-- <p class="productions_description">Lorem ipsum dolor freb tun guilon gthiemltze sit amet, consectetur adipisicing elit. Sit nesciunt illo maxime fugiat perferendis </p> -->
             <div class="flexible_video">
                 <iframe class="productions_video" width="560" height="315" src="https://www.youtube.com/embed/kJq6jDvJPQE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
@@ -212,24 +208,33 @@
 </footer class="footer">
 
 <script>
-    console.log('Hola Mundo! es mi primer linea de JS');
-
+    // console.log('Hola Mundo! es mi primer linea de JS');
+    const ipad = window.matchMedia('screen and (max-width: 767px)');
     const menu = document.querySelector('.menu');
-    console.log(menu);
+    // console.log(menu);
     const burgerButton = document.querySelector('#burgerButton');
-    console.log(burgerButton);
+    // console.log(burgerButton);
     
-     burgerButton.addEventListener('click', function (){
-         menu.classList.toggle('is-active')
-     })
-    
-    // function hideShow () {
-    //     if (menu.classList.contains('is-active')) {
-    //          menu.classList.remove('is-active');
-    //    } else {
-    //         menu.classList.add('is-active');
-    //     }
 
+    ipad.addListener(validation)  
+
+    function validation(event) {
+        if (event.matches) {
+     burgerButton.addEventListener('click', hideShow) 
+     } else {
+     burgerButton.removeEventListener('click', hideShow) 
+         }
+    }
+
+    validation(ipad);
+
+    function hideShow () {
+        if (menu.classList.contains('is-active')) {
+             menu.classList.remove('is-active');
+       } else {
+            menu.classList.add('is-active');
+        }
+    }
 </script>
 
 </body>
